@@ -2229,6 +2229,8 @@ var computedFn = {
         state.isSleeping = false;
         state.disposeWhenNodeIsRemoved = null;
         state.evaluatorFunctionTarget = null;
+        if (DEBUG)
+          this["_options"].owner = null;
     }
 };
 
